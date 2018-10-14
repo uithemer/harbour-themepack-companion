@@ -57,6 +57,7 @@ Page
                 wrapMode: Text.Wrap
                 textFormat: Text.RichText
                 text: qsTr("Released under the GNU GPLv3 license.")
+                  onLinkActivated: Qt.openUrlExternally(link)
             }
 
             Button {
