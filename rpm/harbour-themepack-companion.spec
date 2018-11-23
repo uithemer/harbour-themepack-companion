@@ -12,8 +12,8 @@ Name:       harbour-themepack-companion
 %{!?qtc_qmake5:%define qtc_qmake5 %qmake5}
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
-Summary:        Numix Circle theme pack
-Version:        0.1.0
+Summary:        Companion theme pack
+Version:        0.1.1
 Release:        1
 Group:          Qt/Qt
 License:        GPLv3
@@ -29,7 +29,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Numix Circle theme pack for Sailfish OS.
+Companion theme pack for Sailfish OS.
 
 
 %prep
