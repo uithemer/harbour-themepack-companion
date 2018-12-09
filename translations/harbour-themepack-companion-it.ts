@@ -4,14 +4,6 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <source>Thank you for installing Numix Circle!</source>
-        <translation>Grazie per aver installato Numix Circle!</translation>
-    </message>
-    <message>
-        <source>Released under the GNU GPLv3 license. Based on &lt;a href=&apos;https://github.com/numixproject/numix-icon-theme-circle&apos;&gt;Numix Circle by Numix Project&lt;/a&gt;.</source>
-        <translation>Rilasciato sotto licenza GNU GPLv3. Basato su &lt;a href=&apos;https://github.com/numixproject/numix-icon-theme-circle&apos;&gt;Numix Circle by Numix Project&lt;/a&gt;.</translation>
-    </message>
-    <message>
         <source>Sources</source>
         <translation>Sorgenti</translation>
     </message>
@@ -56,10 +48,6 @@
         <translation>Dona</translation>
     </message>
     <message>
-        <source>Numix CIrcle</source>
-        <translation>Numix Circle</translation>
-    </message>
-    <message>
         <source>Translations</source>
         <translation>Traduzioni</translation>
     </message>
@@ -70,6 +58,30 @@
     <message>
         <source>Transifex</source>
         <translation>Transifex</translation>
+    </message>
+    <message>
+        <source>Companion app</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Thank you for using my companion app!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Released under the GNU GPLv3 license.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>By requesting new icons, you accept sending the name of the unthemed apps installed on your device, along with your e-mail address. This data will be used by me only for the intended purpose and NEVER disclosed to thirdy parties. Your app names and e-mail address will be deleted right after.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keyboard navigation based on the one on &lt;a href=&apos;https://github.com/Wunderfitz/harbour-piepmatz&apos;&gt;Piepmatz&lt;/a&gt; by Sebastian Wolf.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

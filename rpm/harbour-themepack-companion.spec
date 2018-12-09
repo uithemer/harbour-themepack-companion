@@ -13,7 +13,7 @@ Name:       harbour-themepack-companion
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:        Companion theme pack
-Version:        0.1.1
+Version:        0.1.2
 Release:        1
 Group:          Qt/Qt
 License:        GPLv3
@@ -82,7 +82,3 @@ if [ "$1" = "1" ]; then
     // First installation
 
 fi
-
-%changelog
-* Sat Oct 2018 0.1.0
-- First build.

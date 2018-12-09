@@ -4,4 +4,3 @@ X-Nemo-Application-Type=silica-qt5
 Icon=harbour-themepack-companion
 Exec=invoker --type=generic -s /usr/bin/harbour-themepack-companion
 Name=Numix Circle
-Name[it_IT]=harbour-themepack-companion

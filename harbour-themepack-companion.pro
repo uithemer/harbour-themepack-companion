@@ -24,9 +24,8 @@ SOURCES += \
 
 OTHER_FILES += qml/harbour-themepack-companion.qml \
     qml/cover/CoverPage.qml \
-    qml/components/AboutLanguage.qml \
-    qml/components/AboutTranslator.qml \
-    rpm/harbour-themepack-companion.changes.in \
+    qml/components/*.qml \
+    rpm/harbour-themepack-companion.changes \
     rpm/harbour-themepack-companion.spec \
     rpm/harbour-themepack-companion.yaml \
     harbour-themepack-companion.desktop \

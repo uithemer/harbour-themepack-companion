@@ -6,9 +6,38 @@ import "../components"
 Page
 {
     id: firstpage
+    focus: true
     ThemePack { id: themePack }
 
-    BusyIndicator { id: busyindicator; running: false; size: BusyIndicatorSize.Large; anchors.centerIn: parent }
+
+    Keys.onPressed: {
+        handleKeyPressed(event);
+    }
+
+    function handleKeyPressed(event) {
+
+        if (event.key === Qt.Key_Down) {
+            flickable.flick(0, - firstpage.height);
+            event.accepted = true;
+        }
+
+        if (event.key === Qt.Key_Up) {
+            flickable.flick(0, firstpage.height);
+            event.accepted = true;
+        }
+
+        if (event.key === Qt.Key_PageDown) {
+            flickable.scrollToBottom();
+            event.accepted = true;
+        }
+
+        if (event.key === Qt.Key_PageUp) {
+            flickable.scrollToTop();
+            event.accepted = true;
+        }
+    }
+
+    BusyState { id: busyindicator; }
 
     Connections
     {
@@ -22,6 +51,7 @@ Page
 
     SilicaFlickable
     {
+        id: flickable
         anchors.fill: parent
         anchors.bottomMargin: Theme.paddingLarge
         contentHeight: content.height
@@ -43,21 +73,12 @@ Page
                 Image { id: appicon; anchors.horizontalCenter: parent.horizontalCenter; source: "../../appinfo.png" }
             }
 
-            Label {
-                x: Theme.paddingLarge
-                width: parent.width - (x * 2)
-                wrapMode: Text.Wrap
-                textFormat: Text.RichText
+            LabelText {
                 text: qsTr("Thank you for using my companion app!")
             }
 
-            Label {
-                x: Theme.paddingLarge
-                width: parent.width - (x * 2)
-                wrapMode: Text.Wrap
-                textFormat: Text.RichText
+            LabelText {
                 text: qsTr("Released under the GNU GPLv3 license.")
-                  onLinkActivated: Qt.openUrlExternally(link)
             }
 
             Button {
@@ -68,30 +89,16 @@ Page
 
             SectionHeader { text: qsTr("Icon request") }
 
-            Label {
-                x: Theme.paddingLarge
-                width: parent.width - (x * 2)
-                wrapMode: Text.Wrap
-                textFormat: Text.RichText
+            LabelText {
                 text: qsTr("From here you can request missing icons for your favorite apps.")
             }
 
-            Label {
-                x: Theme.paddingLarge
-                width: parent.width - (x * 2)
-                wrapMode: Text.Wrap
-                textFormat: Text.RichText
+            LabelText {
                 text: qsTr("This will open your e-mail client, from which you can send me the name of the apps you would like to be included in this theme.")
-                onLinkActivated: Qt.openUrlExternally(link)
              }
 
-            Label {
-                x: Theme.paddingLarge
-                width: parent.width - (x * 2)
-                wrapMode: Text.Wrap
-                textFormat: Text.RichText
+            LabelText {
                 text: qsTr("By requesting new icons, you accept sending the name of the unthemed apps installed on your device, along with your e-mail address. This data will be used by me only for the intended purpose and NEVER disclosed to thirdy parties. Your app names and e-mail address will be deleted right after.")
-                onLinkActivated: Qt.openUrlExternally(link)
              }
 
             Button {
@@ -105,11 +112,7 @@ Page
 
             SectionHeader { text: qsTr("Developers") }
 
-              Label {
-                  x: Theme.paddingLarge
-                  width: parent.width - (x * 2)
-                  wrapMode: Text.Wrap
-                  textFormat: Text.RichText
+            LabelText {
                   text: qsTr("If you want to create a theme compatible with UI Themer, please read the documentation.")
                }
 
@@ -121,10 +124,7 @@ Page
 
               SectionHeader { text: qsTr("Support") }
 
-              Label {
-                  x: Theme.paddingLarge
-                  width: parent.width - (x * 2)
-                  wrapMode: Text.Wrap
+              LabelText {
                   text: qsTr("If you like my work and want to buy me a beer, feel free to do it!")
               }
 
@@ -133,6 +133,12 @@ Page
                   text: qsTr("Donate")
                   onClicked: Qt.openUrlExternally("https://www.paypal.me/#")
               }
+
+              SectionHeader { text: qsTr("Credits") }
+
+              LabelText {
+                  text: qsTr("Keyboard navigation based on the one on <a href='https://github.com/Wunderfitz/harbour-piepmatz'>Piepmatz</a> by Sebastian Wolf.")
+               }
 
               SectionHeader { text: qsTr("Translations") }
 
@@ -144,13 +150,8 @@ Page
               AboutTranslator { text: "Translator name" }
               Item { width: parent.width; height: Theme.paddingLarge }
 
-              Label {
-                  x: Theme.paddingLarge
-                  width: parent.width - (x * 2)
-                  wrapMode: Text.Wrap
-                  textFormat: Text.RichText
+              LabelText {
                   text: qsTr("Request a new language or contribute to existing languages on the Transifex project page.")
-                  onLinkActivated: Qt.openUrlExternally(link)
               }
 
               Button {
