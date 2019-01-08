@@ -6,5 +6,6 @@ Label {
     width: parent.width - (x * 2)
     wrapMode: Text.Wrap
     textFormat: Text.RichText
+    font.pixelSize: Theme.fontSizeSmall
     onLinkActivated: Qt.openUrlExternally(link)
 }

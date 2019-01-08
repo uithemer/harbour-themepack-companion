@@ -81,6 +81,8 @@ Page
                 text: qsTr("Released under the GNU GPLv3 license.")
             }
 
+            LabelSpacer { }
+
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Sources")
@@ -101,6 +103,8 @@ Page
                 text: qsTr("By requesting new icons, you accept sending the name of the unthemed apps installed on your device, along with your e-mail address. This data will be used by me only for the intended purpose and NEVER disclosed to thirdy parties. Your app names and e-mail address will be deleted right after.")
              }
 
+            LabelSpacer { }
+
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Request icons")
@@ -116,6 +120,8 @@ Page
                   text: qsTr("If you want to create a theme compatible with UI Themer, please read the documentation.")
                }
 
+            LabelSpacer { }
+
               Button {
                   anchors.horizontalCenter: parent.horizontalCenter
                   text: qsTr("Documentation")
@@ -127,6 +133,8 @@ Page
               LabelText {
                   text: qsTr("If you like my work and want to buy me a beer, feel free to do it!")
               }
+
+              LabelSpacer { }
 
               Button {
                   anchors.horizontalCenter: parent.horizontalCenter
@@ -142,22 +150,31 @@ Page
 
               SectionHeader { text: qsTr("Translations") }
 
-              AboutLanguage { text: "Deutsch" }
-              AboutTranslator { text: "Translator name" }
-              Item { width: parent.width; height: Theme.paddingLarge }
+              DetailItem {
+                  label: "Italiano"
+                  value: "Francesco Vaccaro"
+              }
 
-              AboutLanguage { text: "Italiano" }
-              AboutTranslator { text: "Translator name" }
-              Item { width: parent.width; height: Theme.paddingLarge }
+              DetailItem {
+                  label: "Language"
+                  value: "Translator"
+              }
 
               LabelText {
                   text: qsTr("Request a new language or contribute to existing languages on the Transifex project page.")
               }
 
+              LabelSpacer { }
+
               Button {
                   anchors.horizontalCenter: parent.horizontalCenter
                   text: qsTr("Transifex")
                   onClicked: Qt.openUrlExternally("https://www.transifex.com/#")
+              }
+
+              Item {
+                  width: parent.width
+                  height: Theme.paddingLarge
               }
 
         }
