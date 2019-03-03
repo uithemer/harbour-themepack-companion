@@ -86,7 +86,7 @@ Page
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Sources")
-                onClicked: Qt.openUrlExternally("https://github.com/fravaccaro/harbour-themepack-companion")
+                onClicked: Qt.openUrlExternally("https://github.com/uithemer/harbour-themepack-companion")
             }
 
             SectionHeader { text: qsTr("Icon request") }
@@ -125,7 +125,7 @@ Page
               Button {
                   anchors.horizontalCenter: parent.horizontalCenter
                   text: qsTr("Documentation")
-                  onClicked: Qt.openUrlExternally("https://fravaccaro.github.io/themepacksupport-sailfishos/docs/getstarted.html")
+                  onClicked: Qt.openUrlExternally("https://uithemer.github.io/themepacksupport-sailfishos/docs/getstarted.html")
               }
 
               SectionHeader { text: qsTr("Support") }

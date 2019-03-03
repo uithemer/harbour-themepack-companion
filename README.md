@@ -16,6 +16,6 @@ The companion app is released under the terms of the GPLv3 license. However, you
 
 ## Further documentation
 
-  * [Themepacksupport documentation](https://fravaccaro.github.io/themepacksupport-sailfishos/docs/getstarted.html).
-  * [Themepack helper](https://github.com/fravaccaro/harbour-themepack-dummy), an easy and quick resizing tool for your icons.
-  * You may want to take a look at my [Numix Circle theme](https://fravaccaro.github.io/harbour-themepack-numix-circle/) for a practical implementation of the companion app.
+  * [Themepacksupport documentation](https://uithemer.github.io/themepacksupport-sailfishos/docs/getstarted.html).
+  * [Themepack helper](https://github.com/uithemer/harbour-themepack-dummy), an easy and quick resizing tool for your icons.
+  * You may want to take a look at my [Numix Circle theme](https://uithemer.github.io/harbour-themepack-numix-circle/) for a practical implementation of the companion app.

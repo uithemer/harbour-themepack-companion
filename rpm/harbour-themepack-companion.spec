@@ -18,7 +18,7 @@ Release:        2
 Group:          Qt/Qt
 License:        GPLv3
 Packager:       fravaccaro <fravaccaro@jollacommunity.it>
-URL:            https://github.com/fravaccaro/harbour-themepack-companion
+URL:            https://github.com/uithemer/harbour-themepack-companion
 Source0:        %{name}-%{version}.tar.bz2
 Source100:      harbour-themepack-companion.yaml
 Requires:       sailfish-version >= 2.1.0, harbour-themepacksupport >= 0.0.8-1
